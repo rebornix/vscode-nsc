@@ -58,7 +58,13 @@ int main(int argc, const char *argv[])
 				std::string word = line.substr(separator + 1);
 				impl->Add(word);
 				std::clog << "Add word " << word << std::endl;
-			} else if (command.compare("chkb") == 0)
+            }
+            else if (command.compare("ign") == 0)
+            {
+                std::string word = line.substr(separator + 1);
+                impl->Remove(word);
+                std::clog << "Remove word " << word << std::endl;
+            } else if (command.compare("chkb") == 0)
             {
                 std::string text = line.substr(separator + 1);
                 std::vector<uint16_t> uiText((text.size() + 1));
