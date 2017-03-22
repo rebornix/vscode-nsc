@@ -9,7 +9,6 @@ int main(int argc, const char *argv[])
     std::clog << "Commands:" << std::endl;
     std::clog << "quit - Quit" << std::endl;
     std::clog << "add <word> - Add word" << std::endl;
-    std::clog << "ac <word> <word> - Add autocorrect pair" << std::endl;
     std::clog << "ign <word> - Ignore word" << std::endl;
     std::clog << "chkb <text> - Check text (batch - pasted text or file open)" << std::endl;
 	std::clog << "dicset <locale> - Set a custom dictionary" << std::endl;
